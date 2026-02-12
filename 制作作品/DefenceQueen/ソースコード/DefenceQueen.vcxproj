@@ -1,0 +1,540 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{b59bf57d-865a-4dbe-9efd-ff10297ec418}</ProjectGuid>
+    <RootNamespace>DefenceQueen</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
+      <AdditionalIncludeDirectories>C:\Users\student\Desktop\Gitまとめ\DirectXの場所!\DefenceQueen\src\cpp;C:\Users\student\Desktop\Gitまとめ\DirectXの場所!\DefenceQueen\src\include;C:\Users\student\Desktop\Gitまとめ\DirectXの場所!\DefenceQueen\src\include\nlohmann</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <FxCompile>
+      <DisableOptimizations>false</DisableOptimizations>
+    </FxCompile>
+    <FxCompile>
+      <EnableDebuggingInformation>false</EnableDebuggingInformation>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;NDEBUG</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
+      <AdditionalIncludeDirectories>C:\Users\student\Desktop\Gitまとめ\DirectXの場所!\DefenceQueen\src\cpp;C:\Users\student\Desktop\Gitまとめ\DirectXの場所!\DefenceQueen\src\include;C:\Users\student\Desktop\Gitまとめ\DirectXの場所!\DefenceQueen\src\include\nlohmann</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <FxCompile>
+      <EntryPointName>main</EntryPointName>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\cpp\animationobject2d.cpp" />
+    <ClCompile Include="src\cpp\array.cpp" />
+    <ClCompile Include="src\cpp\arrayattackleaf.cpp" />
+    <ClCompile Include="src\cpp\arraybehaviortree.cpp" />
+    <ClCompile Include="src\cpp\arraychecknear.cpp" />
+    <ClCompile Include="src\cpp\arraygetfeedleaf.cpp" />
+    <ClCompile Include="src\cpp\arraymanager.cpp" />
+    <ClCompile Include="src\cpp\arrayspawner.cpp" />
+    <ClCompile Include="src\cpp\arrayspawnmanager.cpp" />
+    <ClCompile Include="src\cpp\arraywaitleaf.cpp" />
+    <ClCompile Include="src\cpp\attackenemyleaf.cpp" />
+    <ClCompile Include="src\cpp\basemapfeed.cpp" />
+    <ClCompile Include="src\cpp\behaviortree.cpp" />
+    <ClCompile Include="src\cpp\billboard.cpp" />
+    <ClCompile Include="src\cpp\block.cpp" />
+    <ClCompile Include="src\cpp\blockmanager.cpp" />
+    <ClCompile Include="src\cpp\boxcollider.cpp" />
+    <ClCompile Include="src\cpp\boxtospherecollision.cpp" />
+    <ClCompile Include="src\cpp\branchnodebase.cpp" />
+    <ClCompile Include="src\cpp\camera.cpp" />
+    <ClCompile Include="src\cpp\charactorparam.cpp" />
+    <ClCompile Include="src\cpp\chasedestination.cpp" />
+    <ClCompile Include="src\cpp\checkneardestination.cpp" />
+    <ClCompile Include="src\cpp\circle3d.cpp" />
+    <ClCompile Include="src\cpp\collider.cpp" />
+    <ClCompile Include="src\cpp\collision.cpp" />
+    <ClCompile Include="src\cpp\collisionbox.cpp" />
+    <ClCompile Include="src\cpp\collisionsphere.cpp" />
+    <ClCompile Include="src\cpp\createjsonmeshdome.cpp" />
+    <ClCompile Include="src\cpp\createjsonmeshfield.cpp" />
+    <ClCompile Include="src\cpp\createjsonui.cpp" />
+    <ClCompile Include="src\cpp\debugproc.cpp" />
+    <ClCompile Include="src\cpp\easing.cpp" />
+    <ClCompile Include="src\cpp\effect.cpp" />
+    <ClCompile Include="src\cpp\effectlaser.cpp" />
+    <ClCompile Include="src\cpp\effectpiler.cpp" />
+    <ClCompile Include="src\cpp\effectsmoke.cpp" />
+    <ClCompile Include="src\cpp\enemy.cpp" />
+    <ClCompile Include="src\cpp\enemyattackleaf.cpp" />
+    <ClCompile Include="src\cpp\enemybehaviortree.cpp" />
+    <ClCompile Include="src\cpp\enemychaseleaf.cpp" />
+    <ClCompile Include="src\cpp\enemychecknear.cpp" />
+    <ClCompile Include="src\cpp\enemygetfeedleaf.cpp" />
+    <ClCompile Include="src\cpp\enemymanager.cpp" />
+    <ClCompile Include="src\cpp\enemyreturnleaf.cpp" />
+    <ClCompile Include="src\cpp\enemyspawner.cpp" />
+    <ClCompile Include="src\cpp\enemyspawnmanager.cpp" />
+    <ClCompile Include="src\cpp\enemystatebase.cpp" />
+    <ClCompile Include="src\cpp\enemystatemove.cpp" />
+    <ClCompile Include="src\cpp\enemystateneutral.cpp" />
+    <ClCompile Include="src\cpp\enemywaitleaf.cpp" />
+    <ClCompile Include="src\cpp\eventarea.cpp" />
+    <ClCompile Include="src\cpp\eventareamanager.cpp" />
+    <ClCompile Include="src\cpp\extractantsignal.cpp" />
+    <ClCompile Include="src\cpp\fade.cpp" />
+    <ClCompile Include="src\cpp\feed.cpp" />
+    <ClCompile Include="src\cpp\feedgetleaf.cpp" />
+    <ClCompile Include="src\cpp\feedmanager.cpp" />
+    <ClCompile Include="src\cpp\feedsignal.cpp" />
+    <ClCompile Include="src\cpp\folllowtopleaf.cpp" />
+    <ClCompile Include="src\cpp\game.cpp" />
+    <ClCompile Include="src\cpp\gamemanager.cpp" />
+    <ClCompile Include="src\cpp\gamesceneobject.cpp" />
+    <ClCompile Include="src\cpp\gamestate.cpp" />
+    <ClCompile Include="src\cpp\gamewallmanager.cpp" />
+    <ClCompile Include="src\cpp\gamewallmodel.cpp" />
+    <ClCompile Include="src\cpp\gauge.cpp" />
+    <ClCompile Include="src\cpp\gimmickmanager.cpp" />
+    <ClCompile Include="src\cpp\hastoporderleaf.cpp" />
+    <ClCompile Include="src\cpp\input.cpp" />
+    <ClCompile Include="src\cpp\instancemodel.cpp" />
+    <ClCompile Include="src\cpp\instancemodelmanager.cpp" />
+    <ClCompile Include="src\cpp\instancemotionmanager.cpp" />
+    <ClCompile Include="src\cpp\instancing.cpp" />
+    <ClCompile Include="src\cpp\instancingcharactor.cpp" />
+    <ClCompile Include="src\cpp\jsonconverter.cpp" />
+    <ClCompile Include="src\cpp\jsonmanager.cpp" />
+    <ClCompile Include="src\cpp\light.cpp" />
+    <ClCompile Include="src\cpp\load.cpp" />
+    <ClCompile Include="src\cpp\loseresult.cpp" />
+    <ClCompile Include="src\cpp\loseresultmanager.cpp" />
+    <ClCompile Include="src\cpp\loseresultobject.cpp" />
+    <ClCompile Include="src\cpp\main.cpp" />
+    <ClCompile Include="src\cpp\manager.cpp" />
+    <ClCompile Include="src\cpp\meshcylinder.cpp" />
+    <ClCompile Include="src\cpp\meshdome.cpp" />
+    <ClCompile Include="src\cpp\meshfield.cpp" />
+    <ClCompile Include="src\cpp\meshimpact.cpp" />
+    <ClCompile Include="src\cpp\meshpiler.cpp" />
+    <ClCompile Include="src\cpp\model.cpp" />
+    <ClCompile Include="src\cpp\modelmanager.cpp" />
+    <ClCompile Include="src\cpp\motion.cpp" />
+    <ClCompile Include="src\cpp\motioninstancing.cpp" />
+    <ClCompile Include="src\cpp\motionmanager.cpp" />
+    <ClCompile Include="src\cpp\move3dobject.cpp" />
+    <ClCompile Include="src\cpp\movecharactor.cpp" />
+    <ClCompile Include="src\cpp\movetofeedleaf.cpp" />
+    <ClCompile Include="src\cpp\network.cpp" />
+    <ClCompile Include="src\cpp\nomovecharactor.cpp" />
+    <ClCompile Include="src\cpp\number.cpp" />
+    <ClCompile Include="src\cpp\object.cpp" />
+    <ClCompile Include="src\cpp\object2D.cpp" />
+    <ClCompile Include="src\cpp\object3D.cpp" />
+    <ClCompile Include="src\cpp\objectX.cpp" />
+    <ClCompile Include="src\cpp\outline.cpp" />
+    <ClCompile Include="src\cpp\parameter.cpp" />
+    <ClCompile Include="src\cpp\particle.cpp" />
+    <ClCompile Include="src\cpp\particlepiler.cpp" />
+    <ClCompile Include="src\cpp\pause.cpp" />
+    <ClCompile Include="src\cpp\pausemanager.cpp" />
+    <ClCompile Include="src\cpp\pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\cpp\pointobj.cpp" />
+    <ClCompile Include="src\cpp\queen.cpp" />
+    <ClCompile Include="src\cpp\ranking.cpp" />
+    <ClCompile Include="src\cpp\rankingmanager.cpp" />
+    <ClCompile Include="src\cpp\rankingobject.cpp" />
+    <ClCompile Include="src\cpp\rankingscore.cpp" />
+    <ClCompile Include="src\cpp\renderer.cpp" />
+    <ClCompile Include="src\cpp\result.cpp" />
+    <ClCompile Include="src\cpp\resultmanager.cpp" />
+    <ClCompile Include="src\cpp\resultobject.cpp" />
+    <ClCompile Include="src\cpp\resultscore.cpp" />
+    <ClCompile Include="src\cpp\resultscoremanager.cpp" />
+    <ClCompile Include="src\cpp\returnnestleaf.cpp" />
+    <ClCompile Include="src\cpp\scene.cpp" />
+    <ClCompile Include="src\cpp\score.cpp" />
+    <ClCompile Include="src\cpp\sendnumber.cpp" />
+    <ClCompile Include="src\cpp\sepalationsign.cpp" />
+    <ClCompile Include="src\cpp\separationant.cpp" />
+    <ClCompile Include="src\cpp\shadow.cpp" />
+    <ClCompile Include="src\cpp\shadowstencil.cpp" />
+    <ClCompile Include="src\cpp\signalui.cpp" />
+    <ClCompile Include="src\cpp\sound.cpp" />
+    <ClCompile Include="src\cpp\spherecollider.cpp" />
+    <ClCompile Include="src\cpp\startexescene.cpp" />
+    <ClCompile Include="src\cpp\startscenemanager.cpp" />
+    <ClCompile Include="src\cpp\state.cpp" />
+    <ClCompile Include="src\cpp\statemachine.cpp" />
+    <ClCompile Include="src\cpp\texture.cpp" />
+    <ClCompile Include="src\cpp\gametime.cpp" />
+    <ClCompile Include="src\cpp\title.cpp" />
+    <ClCompile Include="src\cpp\titleant.cpp" />
+    <ClCompile Include="src\cpp\titleantmanager.cpp" />
+    <ClCompile Include="src\cpp\titlemanager.cpp" />
+    <ClCompile Include="src\cpp\titleobject.cpp" />
+    <ClCompile Include="src\cpp\titlewallmanager.cpp" />
+    <ClCompile Include="src\cpp\topant.cpp" />
+    <ClCompile Include="src\cpp\tutoarrayant.cpp" />
+    <ClCompile Include="src\cpp\tutorial.cpp" />
+    <ClCompile Include="src\cpp\tutorialmanager.cpp" />
+    <ClCompile Include="src\cpp\tutorialobject.cpp" />
+    <ClCompile Include="src\cpp\tutorialtopant.cpp" />
+    <ClCompile Include="src\cpp\tutorialui.cpp" />
+    <ClCompile Include="src\cpp\ui.cpp" />
+    <ClCompile Include="src\cpp\waitorderleaf.cpp" />
+    <ClCompile Include="src\cpp\worker.cpp" />
+    <ClCompile Include="src\cpp\workermanager.cpp" />
+    <ClCompile Include="src\cpp\workerstatebase.cpp" />
+    <ClCompile Include="src\cpp\workerstateneutral.cpp" />
+    <ClCompile Include="src\cpp\workerui.cpp" />
+    <ClCompile Include="src\cpp\workeruimanager.cpp" />
+    <ClCompile Include="src\cpp\xfilemanager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\include\alwaysfail.h" />
+    <ClInclude Include="src\include\alwayssuccess.h" />
+    <ClInclude Include="src\include\animationobject2d.h" />
+    <ClInclude Include="src\include\array.h" />
+    <ClInclude Include="src\include\arrayattackleaf.h" />
+    <ClInclude Include="src\include\arraybehaviortree.h" />
+    <ClInclude Include="src\include\arraychecknear.h" />
+    <ClInclude Include="src\include\arraygetfeedleaf.h" />
+    <ClInclude Include="src\include\arraymanager.h" />
+    <ClInclude Include="src\include\arrayspawner.h" />
+    <ClInclude Include="src\include\arrayspawnmanager.h" />
+    <ClInclude Include="src\include\arraywaitleaf.h" />
+    <ClInclude Include="src\include\attackenemyleaf.h" />
+    <ClInclude Include="src\include\basemapfeed.h" />
+    <ClInclude Include="src\include\behaviortree.h" />
+    <ClInclude Include="src\include\billboard.h" />
+    <ClInclude Include="src\include\blackboard.h" />
+    <ClInclude Include="src\include\block.h" />
+    <ClInclude Include="src\include\blockmanager.h" />
+    <ClInclude Include="src\include\boxcollider.h" />
+    <ClInclude Include="src\include\boxtospherecollision.h" />
+    <ClInclude Include="src\include\branchnodebase.h" />
+    <ClInclude Include="src\include\camera.h" />
+    <ClInclude Include="src\include\charactorparam.h" />
+    <ClInclude Include="src\include\chasedestination.h" />
+    <ClInclude Include="src\include\checkneardestination.h" />
+    <ClInclude Include="src\include\circle3d.h" />
+    <ClInclude Include="src\include\collider.h" />
+    <ClInclude Include="src\include\collision.h" />
+    <ClInclude Include="src\include\collisionbox.h" />
+    <ClInclude Include="src\include\collisionsphere.h" />
+    <ClInclude Include="src\include\compositenodebase.h" />
+    <ClInclude Include="src\include\createjsonmeshdome.h" />
+    <ClInclude Include="src\include\createjsonmeshfield.h" />
+    <ClInclude Include="src\include\createjsonui.h" />
+    <ClInclude Include="src\include\debugproc.h" />
+    <ClInclude Include="src\include\decorator.h" />
+    <ClInclude Include="src\include\easing.h" />
+    <ClInclude Include="src\include\effect.h" />
+    <ClInclude Include="src\include\effectlaser.h" />
+    <ClInclude Include="src\include\effectpiler.h" />
+    <ClInclude Include="src\include\effectsmoke.h" />
+    <ClInclude Include="src\include\enemy.h" />
+    <ClInclude Include="src\include\enemyattackleaf.h" />
+    <ClInclude Include="src\include\enemybehaviortree.h" />
+    <ClInclude Include="src\include\enemychaseleaf.h" />
+    <ClInclude Include="src\include\enemychecknear.h" />
+    <ClInclude Include="src\include\enemygetfeedleaf.h" />
+    <ClInclude Include="src\include\enemymanager.h" />
+    <ClInclude Include="src\include\enemyreturnleaf.h" />
+    <ClInclude Include="src\include\enemyspawner.h" />
+    <ClInclude Include="src\include\enemyspawnmanager.h" />
+    <ClInclude Include="src\include\enemystatebase.h" />
+    <ClInclude Include="src\include\enemystatemove.h" />
+    <ClInclude Include="src\include\enemystateneutral.h" />
+    <ClInclude Include="src\include\enemywaitleaf.h" />
+    <ClInclude Include="src\include\eventarea.h" />
+    <ClInclude Include="src\include\eventareamanager.h" />
+    <ClInclude Include="src\include\extractantsignal.h" />
+    <ClInclude Include="src\include\fade.h" />
+    <ClInclude Include="src\include\feed.h" />
+    <ClInclude Include="src\include\feedgetleaf.h" />
+    <ClInclude Include="src\include\feedmanager.h" />
+    <ClInclude Include="src\include\feedsignal.h" />
+    <ClInclude Include="src\include\folllowtopleaf.h" />
+    <ClInclude Include="src\include\game.h" />
+    <ClInclude Include="src\include\gamemanager.h" />
+    <ClInclude Include="src\include\gamesceneobject.h" />
+    <ClInclude Include="src\include\gamestate.h" />
+    <ClInclude Include="src\include\gametime.h" />
+    <ClInclude Include="src\include\gamewallmanager.h" />
+    <ClInclude Include="src\include\gamewallmodel.h" />
+    <ClInclude Include="src\include\gauge.h" />
+    <ClInclude Include="src\include\gimmickmanager.h" />
+    <ClInclude Include="src\include\hastoporderleaf.h" />
+    <ClInclude Include="src\include\input.h" />
+    <ClInclude Include="src\include\instancemodel.h" />
+    <ClInclude Include="src\include\instancemodelmanager.h" />
+    <ClInclude Include="src\include\instancemotionmanager.h" />
+    <ClInclude Include="src\include\instancing.h" />
+    <ClInclude Include="src\include\instancingcharactor.h" />
+    <ClInclude Include="src\include\inverter.h" />
+    <ClInclude Include="src\include\jsonconverter.h" />
+    <ClInclude Include="src\include\jsoncreator.h" />
+    <ClInclude Include="src\include\jsonmanager.h" />
+    <ClInclude Include="src\include\leafnodebase.h" />
+    <ClInclude Include="src\include\light.h" />
+    <ClInclude Include="src\include\load.h" />
+    <ClInclude Include="src\include\loseresult.h" />
+    <ClInclude Include="src\include\loseresultmanager.h" />
+    <ClInclude Include="src\include\loseresultobject.h" />
+    <ClInclude Include="src\include\main.h" />
+    <ClInclude Include="src\include\manager.h" />
+    <ClInclude Include="src\include\meshcylinder.h" />
+    <ClInclude Include="src\include\meshdome.h" />
+    <ClInclude Include="src\include\meshfield.h" />
+    <ClInclude Include="src\include\meshimpact.h" />
+    <ClInclude Include="src\include\meshpiler.h" />
+    <ClInclude Include="src\include\model.h" />
+    <ClInclude Include="src\include\modelmanager.h" />
+    <ClInclude Include="src\include\motion.h" />
+    <ClInclude Include="src\include\motiondata.h" />
+    <ClInclude Include="src\include\motioninstancing.h" />
+    <ClInclude Include="src\include\motionmanager.h" />
+    <ClInclude Include="src\include\move3dobject.h" />
+    <ClInclude Include="src\include\movecharactor.h" />
+    <ClInclude Include="src\include\movetofeedleaf.h" />
+    <ClInclude Include="src\include\network.h" />
+    <ClInclude Include="src\include\node.h" />
+    <ClInclude Include="src\include\nodebase.h" />
+    <ClInclude Include="src\include\nomovecharactor.h" />
+    <ClInclude Include="src\include\number.h" />
+    <ClInclude Include="src\include\object.h" />
+    <ClInclude Include="src\include\object2D.h" />
+    <ClInclude Include="src\include\object3D.h" />
+    <ClInclude Include="src\include\objectX.h" />
+    <ClInclude Include="src\include\outline.h" />
+    <ClInclude Include="src\include\parameter.h" />
+    <ClInclude Include="src\include\particle.h" />
+    <ClInclude Include="src\include\particlepiler.h" />
+    <ClInclude Include="src\include\pause.h" />
+    <ClInclude Include="src\include\pausemanager.h" />
+    <ClInclude Include="src\include\pch.h" />
+    <ClInclude Include="src\include\pointobj.h" />
+    <ClInclude Include="src\include\queen.h" />
+    <ClInclude Include="src\include\ranking.h" />
+    <ClInclude Include="src\include\rankingmanager.h" />
+    <ClInclude Include="src\include\rankingobject.h" />
+    <ClInclude Include="src\include\rankingscore.h" />
+    <ClInclude Include="src\include\renderer.h" />
+    <ClInclude Include="src\include\result.h" />
+    <ClInclude Include="src\include\resultmanager.h" />
+    <ClInclude Include="src\include\resultobject.h" />
+    <ClInclude Include="src\include\resultscore.h" />
+    <ClInclude Include="src\include\resultscoremanager.h" />
+    <ClInclude Include="src\include\returnnestleaf.h" />
+    <ClInclude Include="src\include\scene.h" />
+    <ClInclude Include="src\include\score.h" />
+    <ClInclude Include="src\include\selector.h" />
+    <ClInclude Include="src\include\sendnumber.h" />
+    <ClInclude Include="src\include\sepalationsign.h" />
+    <ClInclude Include="src\include\separationant.h" />
+    <ClInclude Include="src\include\sepuence.h" />
+    <ClInclude Include="src\include\shadow.h" />
+    <ClInclude Include="src\include\shadowstencil.h" />
+    <ClInclude Include="src\include\signalui.h" />
+    <ClInclude Include="src\include\sound.h" />
+    <ClInclude Include="src\include\spherecollider.h" />
+    <ClInclude Include="src\include\startexescene.h" />
+    <ClInclude Include="src\include\startscenemanager.h" />
+    <ClInclude Include="src\include\state.h" />
+    <ClInclude Include="src\include\statemachine.h" />
+    <ClInclude Include="src\include\targetselector.h" />
+    <ClInclude Include="src\include\template.h" />
+    <ClInclude Include="src\include\texture.h" />
+    <ClInclude Include="src\include\title.h" />
+    <ClInclude Include="src\include\titleant.h" />
+    <ClInclude Include="src\include\titleantmanager.h" />
+    <ClInclude Include="src\include\titlemanager.h" />
+    <ClInclude Include="src\include\titleobject.h" />
+    <ClInclude Include="src\include\titlewallmanager.h" />
+    <ClInclude Include="src\include\topant.h" />
+    <ClInclude Include="src\include\tutoarrayant.h" />
+    <ClInclude Include="src\include\tutorial.h" />
+    <ClInclude Include="src\include\tutorialmanager.h" />
+    <ClInclude Include="src\include\tutorialobject.h" />
+    <ClInclude Include="src\include\tutorialtopant.h" />
+    <ClInclude Include="src\include\tutorialui.h" />
+    <ClInclude Include="src\include\ui.h" />
+    <ClInclude Include="src\include\waitleaf.h" />
+    <ClInclude Include="src\include\waitorderleaf.h" />
+    <ClInclude Include="src\include\worker.h" />
+    <ClInclude Include="src\include\workermanager.h" />
+    <ClInclude Include="src\include\workerstatebase.h" />
+    <ClInclude Include="src\include\workerstateneutral.h" />
+    <ClInclude Include="src\include\workerui.h" />
+    <ClInclude Include="src\include\workeruimanager.h" />
+    <ClInclude Include="src\include\xfilemanager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Instancing.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">VS_Main</EntryPointName>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">VS_Main</EntryPointName>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">3.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">3.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="Out_Line.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">VS_Main</EntryPointName>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">3.0</ShaderModel>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">VS_Main</EntryPointName>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">3.0</ShaderModel>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DefenceQueen.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

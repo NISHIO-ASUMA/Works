@@ -15,6 +15,8 @@
 ┃   ┃
 ┃   ┣━ DefenceQueen
 ┃   ┃
+┃   ┣━ GameServer
+┃   ┃
 ┃
 ┣━ 自作エディター
 ┃   ┃
@@ -32,6 +34,10 @@
 ┣━  DefenceQueen
 ┃   ┃
 ┃   ┣━ 実行ファイル
+┃   ┃
+┃   ┣━ ソースコード
+┃
+┣━  GameServer
 ┃   ┃
 ┃   ┣━ ソースコード
 ┃
@@ -62,6 +68,13 @@
 ◇開発期間   : 2025/11 ～ 2026/01（約3か月）
 ◇開発環境   : Visual Studio 2019 Windows
 ◇ジャンル   : 3Dタワーディフェンス作品
+
+◇作品名     : GameServer
+◇使用言語   : C++
+◇SDK        : DirectX 9
+◇開発期間   : 2025/10 ～ 2026/12（約2か月）
+◇開発環境   : Visual Studio 2019 Windows
+◇ジャンル   : TCP通信を使用したサーバー
 
 ◇作品名     : MapViewer
 ◇使用言語   : C++

@@ -1,0 +1,81 @@
+{
+  "AllObject": 4,
+  "SetObjects": [
+    {
+      "filepath": "STAGEOBJ/AlphaWall.x",
+      "idx": 0,
+      "pos": [
+        0.0,
+        35.0,
+        -840.0
+      ],
+      "rot": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.5,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "filepath": "STAGEOBJ/AlphaWall.x",
+      "idx": 1,
+      "pos": [
+        0.0,
+        35.0,
+        840.0
+      ],
+      "rot": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.5,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "filepath": "STAGEOBJ/Side_Alpha.x",
+      "idx": 2,
+      "pos": [
+        -1600.0,
+        35.0,
+        0.0
+      ],
+      "rot": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "filepath": "STAGEOBJ/Side_Alpha.x",
+      "idx": 3,
+      "pos": [
+        1600.0,
+        35.0,
+        0.0
+      ],
+      "rot": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  ]
+}

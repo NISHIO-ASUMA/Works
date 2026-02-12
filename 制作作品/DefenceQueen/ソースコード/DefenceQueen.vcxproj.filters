@@ -1,0 +1,1410 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\BaseClass">
+      <UniqueIdentifier>{6ac103dd-8346-43fd-a0b2-fd4ae01240ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\BaseClass\2D">
+      <UniqueIdentifier>{145352cf-41e6-47c4-935a-c0e85c52ee36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\BaseClass\3D">
+      <UniqueIdentifier>{a8f27f14-8f7e-4efe-8216-c5b90baf5547}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\BaseClass\Object">
+      <UniqueIdentifier>{94e63e17-d842-4929-87bf-6806285154ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Physics">
+      <UniqueIdentifier>{d826c114-c7eb-456c-85f4-05de928d309f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Physics\Collider">
+      <UniqueIdentifier>{a12984fc-c9d2-49f3-ac1a-1f40b0e8ba25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Physics\Collision">
+      <UniqueIdentifier>{fd781062-acb0-4789-a4f6-b46d5d8134f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Charactor">
+      <UniqueIdentifier>{eeefe4b7-0ce5-474e-afa2-eac34acc7f75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Charactor\Enemy">
+      <UniqueIdentifier>{a64579a3-0b9b-459c-a0d0-46847cc88c3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Charactor\Array">
+      <UniqueIdentifier>{4812ad21-4693-43e9-802e-9c6477b2832b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Charactor\Defence">
+      <UniqueIdentifier>{3fbfdd4d-8783-423d-9d1c-4e4e3877ed3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Scenes">
+      <UniqueIdentifier>{ef473418-6d44-424c-bfd5-c8257cf6c8a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Scenes\BaseScene">
+      <UniqueIdentifier>{88135b18-20b6-460f-812c-546a7482948c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Scenes\SceneManager">
+      <UniqueIdentifier>{e903b709-abda-4d81-93f8-c0c28f5f0d17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Scenes\SceneObject">
+      <UniqueIdentifier>{b8eb7756-26f6-4d4c-9b64-8f5d112fd7de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Manager">
+      <UniqueIdentifier>{b79554dc-9150-4edb-9659-2252a88e248e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\2DUI">
+      <UniqueIdentifier>{8eda9416-1573-439b-9b99-4a18e9cefa91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\XFile">
+      <UniqueIdentifier>{2b3460a0-2453-45ad-a849-b7352cc7a83b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\3D">
+      <UniqueIdentifier>{8cb632e6-9d24-409d-9ced-b78fca3a4b10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Mesh">
+      <UniqueIdentifier>{f302098c-0dbb-4f89-8c8d-a53da4bbd7f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Effect">
+      <UniqueIdentifier>{e9ad9d04-6f39-4404-9028-ca0b721b222a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Particle">
+      <UniqueIdentifier>{6d817eb8-b773-4e6d-97f2-65d7345dbbc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\MainLoop">
+      <UniqueIdentifier>{0d20b76b-6356-4d06-ae4f-d001c30f2a81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\State">
+      <UniqueIdentifier>{dc18504c-85bc-42d5-b1df-e3bedb3f3f92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\State\Base">
+      <UniqueIdentifier>{fe53ca45-9ba6-47fd-bb2d-e0a1d5ff6f87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\State\child">
+      <UniqueIdentifier>{f5e176f6-e840-4106-81a2-d1bd87b7d873}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\OutSide">
+      <UniqueIdentifier>{6ada1189-bc7e-4c8d-ab7c-2eb187f3ce55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Charactor\Motion">
+      <UniqueIdentifier>{f7108593-c7dd-4ce7-a408-ad9a6d3bf18c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Charactor\Param">
+      <UniqueIdentifier>{a746d536-8fe7-407a-9621-7dc31edd5376}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\State\Enemy">
+      <UniqueIdentifier>{765cd623-4322-44d8-a0b2-79d4772ef6b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\AI_System">
+      <UniqueIdentifier>{e8489493-e4a6-407a-bbf9-6981feb126f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\AI_System\Base">
+      <UniqueIdentifier>{5b51c14b-10d4-4cfc-839a-fb4f02b2c5cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\AI_System\Composite">
+      <UniqueIdentifier>{b4da949d-efdd-4165-84d5-2f54e4d63d83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\AI_System\Sequence">
+      <UniqueIdentifier>{3d4bd187-580f-4db3-b7ec-2f3868765f0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\AI_System\Selector">
+      <UniqueIdentifier>{dc26dfff-1e21-4997-b514-3d19dc771df0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\AI_System\Branch">
+      <UniqueIdentifier>{1bfd4407-3abc-4f78-bde5-155feb133bbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\AI_System\Inverter">
+      <UniqueIdentifier>{21cf56d8-839a-437e-b7ee-701bae6d43ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\AI_System\Decorator">
+      <UniqueIdentifier>{e345cbaf-a999-4762-a42c-27cccca1257b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\AI_System\LeafNode">
+      <UniqueIdentifier>{69408f50-d5f7-470c-bbce-9445bcd804eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\AI_System\Default">
+      <UniqueIdentifier>{fa2b6397-f9de-4222-9e1a-a3d7a8cead3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\AI_System\LeafNode\Base">
+      <UniqueIdentifier>{33062f8d-57d1-4b17-b998-1e596186f966}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\AI_System\Branch\Base">
+      <UniqueIdentifier>{65b918f8-1991-437b-a63a-c7f96f2feafa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\AI_System\Base_Tree">
+      <UniqueIdentifier>{50870cdd-64fe-4a8c-88db-e53271f40e2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\AI_System\LeafNode\Samples">
+      <UniqueIdentifier>{77874f6c-146d-4f5a-9097-f9f3ae5eff9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\AI_System">
+      <UniqueIdentifier>{efd565b5-8c37-4df0-a2c6-c3b420a5a3cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Charactor">
+      <UniqueIdentifier>{98f77a20-e00d-4cf1-853e-a7e22aef39bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Charactor\Array">
+      <UniqueIdentifier>{c6e8836c-44f1-40a7-b2d7-f3337b4431d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Charactor\Enemy">
+      <UniqueIdentifier>{269d1ed9-83e9-40d3-a76a-9947ed5e437e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Charactor\Defence">
+      <UniqueIdentifier>{7803c19c-70fd-44e0-b5ff-833bbf2dbf98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Charactor\Param">
+      <UniqueIdentifier>{cc150911-339b-401b-8f79-36ff35ca1bef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Charactor\Motion">
+      <UniqueIdentifier>{b0048245-2681-4b51-9179-30d7d20831d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\XFile">
+      <UniqueIdentifier>{2a89d704-8699-4a23-910e-fa0a436b6893}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Enemy_AI">
+      <UniqueIdentifier>{fe750835-3860-4ae8-8aec-3b14a5ced12a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Enemy_AI\Tree">
+      <UniqueIdentifier>{f2308e88-acee-44b3-bfc4-41c2ba1b4ff3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Enemy_AI\Leaf">
+      <UniqueIdentifier>{2fd508ab-e5cf-4399-9fb5-21966f172f2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\State">
+      <UniqueIdentifier>{9207398d-9bb6-4640-9862-45f87e392869}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\State\Base">
+      <UniqueIdentifier>{abfbe380-0fca-4fe9-a8c2-f9f3935bae45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\State\Enemy">
+      <UniqueIdentifier>{df73a93b-7b86-4adc-b32e-a11923ce90f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\State\Child">
+      <UniqueIdentifier>{935efbd1-5ca6-40e7-85fb-572c2e970c1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Physics">
+      <UniqueIdentifier>{01515b81-05bc-4424-beb6-d782fed2f059}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Physics\Collider">
+      <UniqueIdentifier>{58abf6fc-bcac-467e-b6fb-831b3ff331ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Physics\Collision">
+      <UniqueIdentifier>{26e9e21a-bec9-4893-9fa6-977c483f226c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\BaseClass">
+      <UniqueIdentifier>{3ca3fea0-9ae6-4a50-959a-d621e8cf68fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\BaseClass\2D">
+      <UniqueIdentifier>{97f2a4e7-0fdd-4933-837a-ce78c3c5aad6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\BaseClass\3D">
+      <UniqueIdentifier>{2ae5d40a-eae1-4fdb-bde4-bcf4b62e5710}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\BaseClass\Object">
+      <UniqueIdentifier>{3f8c5283-2432-4d9b-9bf9-17f5a04fff8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\3D">
+      <UniqueIdentifier>{c6b2f437-5fef-490e-baf9-a3feddbfe9a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\2DUI">
+      <UniqueIdentifier>{0840d56b-fd7a-490b-9e1f-2c7828177f42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\MainLoop">
+      <UniqueIdentifier>{6d2d8b94-00bc-474c-b384-e992c40c91b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\OutSide">
+      <UniqueIdentifier>{f29b6f84-2531-47de-bffa-a1708bb6b2fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Manager">
+      <UniqueIdentifier>{44585164-acba-401d-9071-9f0bb9a36bb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Effect">
+      <UniqueIdentifier>{5b06eb52-0bcc-431b-ae09-1fae1442319d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Particle">
+      <UniqueIdentifier>{c0743c96-1f32-4522-bcf9-6937cd64a4eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\AI_System\Base_Sample">
+      <UniqueIdentifier>{93289a51-ec9d-451f-9d53-43325f00bd53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\AI_System\Branch">
+      <UniqueIdentifier>{8908c6a1-e885-4f33-b6f9-58a55fe68c6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Enemy_AI">
+      <UniqueIdentifier>{4a6c16d9-86bb-4b0c-8eeb-70d42c05efae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Enemy_AI\Base_Tree">
+      <UniqueIdentifier>{f385065b-e4c7-4940-8485-973a039bbdec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Enemy_AI\Leaf">
+      <UniqueIdentifier>{0163b5ee-d0ca-4dcb-a92a-94df093b3b6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\State\Worker">
+      <UniqueIdentifier>{a4833775-f4b7-44fc-b154-23e31f4cd32f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\State\Worker">
+      <UniqueIdentifier>{b342d1c0-e1b9-4e90-ba94-d61c9f08632d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Charactor\Worker">
+      <UniqueIdentifier>{0eb2ba27-7e22-45ef-a380-9d87afc76920}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Charactor\Worker">
+      <UniqueIdentifier>{bb2bb065-46e1-4991-be1b-5ed4ca8df153}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Mesh">
+      <UniqueIdentifier>{a2b0f7d6-bb19-4b22-858f-354099a99d86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Charactor\Spawn">
+      <UniqueIdentifier>{8f379e00-8f5a-46f1-b194-17bce5beb2dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Charactor\TitleCharactor">
+      <UniqueIdentifier>{07b3099f-2a14-4751-8166-c5778da09601}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Charactor\Spawn">
+      <UniqueIdentifier>{36ccf051-4241-48be-94d2-9d57da77e2b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Array_AI">
+      <UniqueIdentifier>{54816a09-9d5c-4ea5-8c20-09f93f5b0f4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Array_AI\Base_tree">
+      <UniqueIdentifier>{faa546aa-5193-4f00-8848-2370d4413971}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Array_AI\Leaf">
+      <UniqueIdentifier>{70a7f790-0dbf-476d-90b0-30c893744137}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Charactor\Spawn\Array_Spawn">
+      <UniqueIdentifier>{87895896-6079-4805-9e72-f9ff297a8497}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Charactor\Spawn\Enemy_Spawn">
+      <UniqueIdentifier>{d5b2b06b-3f18-4ec7-9be6-d03acf13f0c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Shader">
+      <UniqueIdentifier>{44aee120-22af-4176-8a1a-ae7ab4016f6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Shader">
+      <UniqueIdentifier>{60ca1e87-3696-452b-a4b0-eaf709e1c3aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Charactor\TutorialCharactor">
+      <UniqueIdentifier>{aa067d1d-3182-4094-b782-d939d5799d96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\NetWork">
+      <UniqueIdentifier>{94ccc271-78fb-49ea-bef6-119dcf52352b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Array_AI">
+      <UniqueIdentifier>{bab8c8d2-ad37-4102-ae5c-54764e7b304d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Array_AI\Base_tree">
+      <UniqueIdentifier>{f0f534c7-cc0c-48d8-9a2e-cb40b7f9355a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Array_AI\Leaf">
+      <UniqueIdentifier>{9a6b38d3-6c2b-4741-be44-7e28c4f5e18c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\NetWork">
+      <UniqueIdentifier>{4ad8d88f-9169-4ba4-aaf7-d42c10960707}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Charactor\TitleCharactor">
+      <UniqueIdentifier>{3658480b-5f83-4224-aa4d-95f3514e52ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Charactor\TutoCharactor">
+      <UniqueIdentifier>{64255440-2883-486b-a223-af006fdb027f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Scenes">
+      <UniqueIdentifier>{13e9f8a1-8e11-4c2a-ba7c-4efa04748110}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Scenes\BaseScene">
+      <UniqueIdentifier>{593f0241-a9cf-48b2-a00e-fa7810fc370c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Scenes\SceneManager">
+      <UniqueIdentifier>{b955c5bb-c461-4085-863a-6f5eca372f8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Scenes\SceneObject">
+      <UniqueIdentifier>{63bec1ac-da4d-4233-8b91-36ea81c6f4d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Charactor\Instancing">
+      <UniqueIdentifier>{8b894f1d-935c-4565-9ed0-8c7066cf7b85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Charactor\Instancing\Base">
+      <UniqueIdentifier>{d5465938-f9cd-4cfc-bd0f-713597d52e62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Charactor\Instancing\Manager">
+      <UniqueIdentifier>{c820e2be-6cc3-4343-94e8-4c186c0e2c6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Util">
+      <UniqueIdentifier>{11ba8d1e-ae84-4a37-b8bb-db91cd294e75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Charactor\Instancing">
+      <UniqueIdentifier>{e29527c9-94f7-4a1a-bead-5f8a72b0b85a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Charactor\Instancing\Base">
+      <UniqueIdentifier>{6cd24ec6-f472-4f66-8fe0-7f5eb3b86157}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Charactor\Instancing\Manager">
+      <UniqueIdentifier>{cd355818-bb21-47a8-bbc5-dc8a9e80ccc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Charactor\Spawn\Array_Spawn">
+      <UniqueIdentifier>{34769566-09db-4eb5-adfe-b9b026f494a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Charactor\Spawn\Enemy_Spawn">
+      <UniqueIdentifier>{0494d56f-f12f-4a83-8cc2-e30433f014ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\JsonUtilty">
+      <UniqueIdentifier>{95d08e9d-32c0-4c7f-ad5b-553a820fad1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\JsonUtilty\Base">
+      <UniqueIdentifier>{2c6769ce-9d06-499a-900f-028b97ed2608}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\JsonUtilty\Sepalationclass">
+      <UniqueIdentifier>{cefe9c15-ab8f-4716-87bc-659102577eff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\JsonUtility">
+      <UniqueIdentifier>{df83af51-7d4d-49fc-b92a-f411764d574b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\JsonUtility\Base">
+      <UniqueIdentifier>{a03f1672-c2ee-47f6-b807-20381f816521}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\JsonUtility\Sepalation">
+      <UniqueIdentifier>{fc747fc8-cf13-4c40-a7a8-aafe37f54782}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\cpp\gauge.cpp">
+      <Filter>ソース ファイル\2DUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\number.cpp">
+      <Filter>ソース ファイル\2DUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\pause.cpp">
+      <Filter>ソース ファイル\2DUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\rankingscore.cpp">
+      <Filter>ソース ファイル\2DUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\resultscore.cpp">
+      <Filter>ソース ファイル\2DUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\score.cpp">
+      <Filter>ソース ファイル\2DUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\sendnumber.cpp">
+      <Filter>ソース ファイル\2DUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\gametime.cpp">
+      <Filter>ソース ファイル\2DUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\tutorialui.cpp">
+      <Filter>ソース ファイル\2DUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\ui.cpp">
+      <Filter>ソース ファイル\2DUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\workerui.cpp">
+      <Filter>ソース ファイル\2DUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\eventarea.cpp">
+      <Filter>ソース ファイル\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\feedsignal.cpp">
+      <Filter>ソース ファイル\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\sepalationsign.cpp">
+      <Filter>ソース ファイル\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\shadow.cpp">
+      <Filter>ソース ファイル\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\signalui.cpp">
+      <Filter>ソース ファイル\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\behaviortree.cpp">
+      <Filter>ソース ファイル\AI_System\Base_Sample</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\chasedestination.cpp">
+      <Filter>ソース ファイル\AI_System\Base_Sample</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\checkneardestination.cpp">
+      <Filter>ソース ファイル\AI_System\Base_Sample</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\branchnodebase.cpp">
+      <Filter>ソース ファイル\AI_System\Branch</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\arraybehaviortree.cpp">
+      <Filter>ソース ファイル\Array_AI\Base_tree</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\arrayattackleaf.cpp">
+      <Filter>ソース ファイル\Array_AI\Leaf</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\arraychecknear.cpp">
+      <Filter>ソース ファイル\Array_AI\Leaf</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\arraygetfeedleaf.cpp">
+      <Filter>ソース ファイル\Array_AI\Leaf</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\arraywaitleaf.cpp">
+      <Filter>ソース ファイル\Array_AI\Leaf</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\attackenemyleaf.cpp">
+      <Filter>ソース ファイル\Array_AI\Leaf</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\feedgetleaf.cpp">
+      <Filter>ソース ファイル\Array_AI\Leaf</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\folllowtopleaf.cpp">
+      <Filter>ソース ファイル\Array_AI\Leaf</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\hastoporderleaf.cpp">
+      <Filter>ソース ファイル\Array_AI\Leaf</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\movetofeedleaf.cpp">
+      <Filter>ソース ファイル\Array_AI\Leaf</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\returnnestleaf.cpp">
+      <Filter>ソース ファイル\Array_AI\Leaf</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\waitorderleaf.cpp">
+      <Filter>ソース ファイル\Array_AI\Leaf</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\animationobject2d.cpp">
+      <Filter>ソース ファイル\BaseClass\2D</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\object2D.cpp">
+      <Filter>ソース ファイル\BaseClass\2D</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\billboard.cpp">
+      <Filter>ソース ファイル\BaseClass\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\object3D.cpp">
+      <Filter>ソース ファイル\BaseClass\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\objectX.cpp">
+      <Filter>ソース ファイル\BaseClass\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\move3dobject.cpp">
+      <Filter>ソース ファイル\BaseClass\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\movecharactor.cpp">
+      <Filter>ソース ファイル\BaseClass\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\nomovecharactor.cpp">
+      <Filter>ソース ファイル\BaseClass\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\object.cpp">
+      <Filter>ソース ファイル\BaseClass\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\array.cpp">
+      <Filter>ソース ファイル\Charactor\Array</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\arraymanager.cpp">
+      <Filter>ソース ファイル\Charactor\Array</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\separationant.cpp">
+      <Filter>ソース ファイル\Charactor\Array</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\topant.cpp">
+      <Filter>ソース ファイル\Charactor\Array</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\queen.cpp">
+      <Filter>ソース ファイル\Charactor\Defence</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\enemy.cpp">
+      <Filter>ソース ファイル\Charactor\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\enemymanager.cpp">
+      <Filter>ソース ファイル\Charactor\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\instancemodel.cpp">
+      <Filter>ソース ファイル\Charactor\Instancing\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\instancingcharactor.cpp">
+      <Filter>ソース ファイル\Charactor\Instancing\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\motioninstancing.cpp">
+      <Filter>ソース ファイル\Charactor\Instancing\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\instancemodelmanager.cpp">
+      <Filter>ソース ファイル\Charactor\Instancing\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\instancemotionmanager.cpp">
+      <Filter>ソース ファイル\Charactor\Instancing\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\model.cpp">
+      <Filter>ソース ファイル\Charactor\Motion</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\motion.cpp">
+      <Filter>ソース ファイル\Charactor\Motion</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\motionmanager.cpp">
+      <Filter>ソース ファイル\Charactor\Motion</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\charactorparam.cpp">
+      <Filter>ソース ファイル\Charactor\Param</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\parameter.cpp">
+      <Filter>ソース ファイル\Charactor\Param</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\arrayspawner.cpp">
+      <Filter>ソース ファイル\Charactor\Spawn\Array_Spawn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\arrayspawnmanager.cpp">
+      <Filter>ソース ファイル\Charactor\Spawn\Array_Spawn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\enemyspawner.cpp">
+      <Filter>ソース ファイル\Charactor\Spawn\Enemy_Spawn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\enemyspawnmanager.cpp">
+      <Filter>ソース ファイル\Charactor\Spawn\Enemy_Spawn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\titleant.cpp">
+      <Filter>ソース ファイル\Charactor\TitleCharactor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\titleantmanager.cpp">
+      <Filter>ソース ファイル\Charactor\TitleCharactor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\tutoarrayant.cpp">
+      <Filter>ソース ファイル\Charactor\TutorialCharactor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\tutorialtopant.cpp">
+      <Filter>ソース ファイル\Charactor\TutorialCharactor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\worker.cpp">
+      <Filter>ソース ファイル\Charactor\Worker</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\workermanager.cpp">
+      <Filter>ソース ファイル\Charactor\Worker</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\effect.cpp">
+      <Filter>ソース ファイル\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\effectlaser.cpp">
+      <Filter>ソース ファイル\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\effectpiler.cpp">
+      <Filter>ソース ファイル\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\effectsmoke.cpp">
+      <Filter>ソース ファイル\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\enemybehaviortree.cpp">
+      <Filter>ソース ファイル\Enemy_AI\Base_Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\enemyattackleaf.cpp">
+      <Filter>ソース ファイル\Enemy_AI\Leaf</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\enemychaseleaf.cpp">
+      <Filter>ソース ファイル\Enemy_AI\Leaf</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\enemychecknear.cpp">
+      <Filter>ソース ファイル\Enemy_AI\Leaf</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\enemygetfeedleaf.cpp">
+      <Filter>ソース ファイル\Enemy_AI\Leaf</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\enemyreturnleaf.cpp">
+      <Filter>ソース ファイル\Enemy_AI\Leaf</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\enemywaitleaf.cpp">
+      <Filter>ソース ファイル\Enemy_AI\Leaf</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\main.cpp">
+      <Filter>ソース ファイル\MainLoop</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\manager.cpp">
+      <Filter>ソース ファイル\MainLoop</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\pch.cpp">
+      <Filter>ソース ファイル\MainLoop</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\renderer.cpp">
+      <Filter>ソース ファイル\MainLoop</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\blockmanager.cpp">
+      <Filter>ソース ファイル\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\eventareamanager.cpp">
+      <Filter>ソース ファイル\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\feedmanager.cpp">
+      <Filter>ソース ファイル\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\gamewallmanager.cpp">
+      <Filter>ソース ファイル\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\gimmickmanager.cpp">
+      <Filter>ソース ファイル\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\modelmanager.cpp">
+      <Filter>ソース ファイル\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\pausemanager.cpp">
+      <Filter>ソース ファイル\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\resultscoremanager.cpp">
+      <Filter>ソース ファイル\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\titlewallmanager.cpp">
+      <Filter>ソース ファイル\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\workeruimanager.cpp">
+      <Filter>ソース ファイル\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\xfilemanager.cpp">
+      <Filter>ソース ファイル\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\meshfield.cpp">
+      <Filter>ソース ファイル\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\meshimpact.cpp">
+      <Filter>ソース ファイル\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\meshpiler.cpp">
+      <Filter>ソース ファイル\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\meshcylinder.cpp">
+      <Filter>ソース ファイル\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\meshdome.cpp">
+      <Filter>ソース ファイル\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\network.cpp">
+      <Filter>ソース ファイル\NetWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\camera.cpp">
+      <Filter>ソース ファイル\OutSide</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\debugproc.cpp">
+      <Filter>ソース ファイル\OutSide</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\easing.cpp">
+      <Filter>ソース ファイル\OutSide</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\input.cpp">
+      <Filter>ソース ファイル\OutSide</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\light.cpp">
+      <Filter>ソース ファイル\OutSide</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\load.cpp">
+      <Filter>ソース ファイル\OutSide</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\sound.cpp">
+      <Filter>ソース ファイル\OutSide</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\texture.cpp">
+      <Filter>ソース ファイル\OutSide</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\particle.cpp">
+      <Filter>ソース ファイル\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\particlepiler.cpp">
+      <Filter>ソース ファイル\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\boxcollider.cpp">
+      <Filter>ソース ファイル\Physics\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\collider.cpp">
+      <Filter>ソース ファイル\Physics\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\spherecollider.cpp">
+      <Filter>ソース ファイル\Physics\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\fade.cpp">
+      <Filter>ソース ファイル\Scenes\BaseScene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\game.cpp">
+      <Filter>ソース ファイル\Scenes\BaseScene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\loseresult.cpp">
+      <Filter>ソース ファイル\Scenes\BaseScene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\ranking.cpp">
+      <Filter>ソース ファイル\Scenes\BaseScene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\result.cpp">
+      <Filter>ソース ファイル\Scenes\BaseScene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\scene.cpp">
+      <Filter>ソース ファイル\Scenes\BaseScene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\startexescene.cpp">
+      <Filter>ソース ファイル\Scenes\BaseScene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\title.cpp">
+      <Filter>ソース ファイル\Scenes\BaseScene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\tutorial.cpp">
+      <Filter>ソース ファイル\Scenes\BaseScene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\gamemanager.cpp">
+      <Filter>ソース ファイル\Scenes\SceneManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\rankingmanager.cpp">
+      <Filter>ソース ファイル\Scenes\SceneManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\resultmanager.cpp">
+      <Filter>ソース ファイル\Scenes\SceneManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\startscenemanager.cpp">
+      <Filter>ソース ファイル\Scenes\SceneManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\titlemanager.cpp">
+      <Filter>ソース ファイル\Scenes\SceneManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\tutorialmanager.cpp">
+      <Filter>ソース ファイル\Scenes\SceneManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\gamesceneobject.cpp">
+      <Filter>ソース ファイル\Scenes\SceneObject</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\rankingobject.cpp">
+      <Filter>ソース ファイル\Scenes\SceneObject</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\resultobject.cpp">
+      <Filter>ソース ファイル\Scenes\SceneObject</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\titleobject.cpp">
+      <Filter>ソース ファイル\Scenes\SceneObject</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\tutorialobject.cpp">
+      <Filter>ソース ファイル\Scenes\SceneObject</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\instancing.cpp">
+      <Filter>ソース ファイル\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\outline.cpp">
+      <Filter>ソース ファイル\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\enemystatebase.cpp">
+      <Filter>ソース ファイル\State\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\state.cpp">
+      <Filter>ソース ファイル\State\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\statemachine.cpp">
+      <Filter>ソース ファイル\State\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\workerstatebase.cpp">
+      <Filter>ソース ファイル\State\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\gamestate.cpp">
+      <Filter>ソース ファイル\State\child</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\enemystatemove.cpp">
+      <Filter>ソース ファイル\State\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\enemystateneutral.cpp">
+      <Filter>ソース ファイル\State\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\workerstateneutral.cpp">
+      <Filter>ソース ファイル\State\Worker</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\block.cpp">
+      <Filter>ソース ファイル\XFile</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\feed.cpp">
+      <Filter>ソース ファイル\XFile</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\gamewallmodel.cpp">
+      <Filter>ソース ファイル\XFile</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\pointobj.cpp">
+      <Filter>ソース ファイル\XFile</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\shadowstencil.cpp">
+      <Filter>ソース ファイル\XFile</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\boxtospherecollision.cpp">
+      <Filter>ソース ファイル\Physics\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\collisionsphere.cpp">
+      <Filter>ソース ファイル\Physics\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\collision.cpp">
+      <Filter>ソース ファイル\Physics\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\collisionbox.cpp">
+      <Filter>ソース ファイル\Physics\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\basemapfeed.cpp">
+      <Filter>ソース ファイル\XFile</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\circle3d.cpp">
+      <Filter>ソース ファイル\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\extractantsignal.cpp">
+      <Filter>ソース ファイル\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\loseresultobject.cpp">
+      <Filter>ソース ファイル\Scenes\SceneObject</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\jsonmanager.cpp">
+      <Filter>ソース ファイル\JsonUtilty\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\createjsonui.cpp">
+      <Filter>ソース ファイル\JsonUtilty\Sepalationclass</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\jsonconverter.cpp">
+      <Filter>ソース ファイル\JsonUtilty\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\createjsonmeshdome.cpp">
+      <Filter>ソース ファイル\JsonUtilty\Sepalationclass</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\createjsonmeshfield.cpp">
+      <Filter>ソース ファイル\JsonUtilty\Sepalationclass</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\loseresultmanager.cpp">
+      <Filter>ソース ファイル\Scenes\SceneManager</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\include\outline.h">
+      <Filter>ヘッダー ファイル\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\instancing.h">
+      <Filter>ヘッダー ファイル\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\alwaysfail.h">
+      <Filter>ヘッダー ファイル\AI_System\LeafNode\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\alwayssuccess.h">
+      <Filter>ヘッダー ファイル\AI_System\LeafNode\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\block.h">
+      <Filter>ヘッダー ファイル\XFile</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\feed.h">
+      <Filter>ヘッダー ファイル\XFile</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\pointobj.h">
+      <Filter>ヘッダー ファイル\XFile</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\shadowstencil.h">
+      <Filter>ヘッダー ファイル\XFile</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\gamewallmodel.h">
+      <Filter>ヘッダー ファイル\XFile</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\template.h">
+      <Filter>ヘッダー ファイル\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\tutorial.h">
+      <Filter>ヘッダー ファイル\Scenes\BaseScene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\title.h">
+      <Filter>ヘッダー ファイル\Scenes\BaseScene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\scene.h">
+      <Filter>ヘッダー ファイル\Scenes\BaseScene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\result.h">
+      <Filter>ヘッダー ファイル\Scenes\BaseScene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\ranking.h">
+      <Filter>ヘッダー ファイル\Scenes\BaseScene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\loseresult.h">
+      <Filter>ヘッダー ファイル\Scenes\BaseScene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\startexescene.h">
+      <Filter>ヘッダー ファイル\Scenes\BaseScene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\tutorialmanager.h">
+      <Filter>ヘッダー ファイル\Scenes\SceneManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\titlemanager.h">
+      <Filter>ヘッダー ファイル\Scenes\SceneManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\startscenemanager.h">
+      <Filter>ヘッダー ファイル\Scenes\SceneManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\resultmanager.h">
+      <Filter>ヘッダー ファイル\Scenes\SceneManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\tutorialobject.h">
+      <Filter>ヘッダー ファイル\Scenes\SceneObject</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\titleobject.h">
+      <Filter>ヘッダー ファイル\Scenes\SceneObject</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\resultobject.h">
+      <Filter>ヘッダー ファイル\Scenes\SceneObject</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\rankingobject.h">
+      <Filter>ヘッダー ファイル\Scenes\SceneObject</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\rankingmanager.h">
+      <Filter>ヘッダー ファイル\Scenes\SceneManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\gamemanager.h">
+      <Filter>ヘッダー ファイル\Scenes\SceneManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\gamesceneobject.h">
+      <Filter>ヘッダー ファイル\Scenes\SceneObject</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\network.h">
+      <Filter>ヘッダー ファイル\NetWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\easing.h">
+      <Filter>ヘッダー ファイル\OutSide</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\load.h">
+      <Filter>ヘッダー ファイル\OutSide</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\fade.h">
+      <Filter>ヘッダー ファイル\OutSide</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\input.h">
+      <Filter>ヘッダー ファイル\OutSide</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\camera.h">
+      <Filter>ヘッダー ファイル\OutSide</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\debugproc.h">
+      <Filter>ヘッダー ファイル\OutSide</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\texture.h">
+      <Filter>ヘッダー ファイル\OutSide</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\sound.h">
+      <Filter>ヘッダー ファイル\OutSide</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\particle.h">
+      <Filter>ヘッダー ファイル\Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\particlepiler.h">
+      <Filter>ヘッダー ファイル\Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\collider.h">
+      <Filter>ヘッダー ファイル\Physics\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\boxcollider.h">
+      <Filter>ヘッダー ファイル\Physics\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\spherecollider.h">
+      <Filter>ヘッダー ファイル\Physics\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\boxtospherecollision.h">
+      <Filter>ヘッダー ファイル\Physics\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\collision.h">
+      <Filter>ヘッダー ファイル\Physics\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\collisionbox.h">
+      <Filter>ヘッダー ファイル\Physics\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\collisionsphere.h">
+      <Filter>ヘッダー ファイル\Physics\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\light.h">
+      <Filter>ヘッダー ファイル\OutSide</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\main.h">
+      <Filter>ヘッダー ファイル\MainLoop</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\manager.h">
+      <Filter>ヘッダー ファイル\MainLoop</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\pch.h">
+      <Filter>ヘッダー ファイル\MainLoop</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\renderer.h">
+      <Filter>ヘッダー ファイル\MainLoop</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\tutorialui.h">
+      <Filter>ヘッダー ファイル\2DUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\ui.h">
+      <Filter>ヘッダー ファイル\2DUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\workerui.h">
+      <Filter>ヘッダー ファイル\2DUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\score.h">
+      <Filter>ヘッダー ファイル\2DUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\pause.h">
+      <Filter>ヘッダー ファイル\2DUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\instancemodel.h">
+      <Filter>ヘッダー ファイル\Charactor\Instancing\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\instancemodelmanager.h">
+      <Filter>ヘッダー ファイル\Charactor\Instancing\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\instancemotionmanager.h">
+      <Filter>ヘッダー ファイル\Charactor\Instancing\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\instancingcharactor.h">
+      <Filter>ヘッダー ファイル\Charactor\Instancing\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\game.h">
+      <Filter>ヘッダー ファイル\Scenes\BaseScene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\effect.h">
+      <Filter>ヘッダー ファイル\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\effectlaser.h">
+      <Filter>ヘッダー ファイル\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\effectpiler.h">
+      <Filter>ヘッダー ファイル\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\effectsmoke.h">
+      <Filter>ヘッダー ファイル\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\enemywaitleaf.h">
+      <Filter>ヘッダー ファイル\Enemy_AI\Leaf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\enemybehaviortree.h">
+      <Filter>ヘッダー ファイル\Enemy_AI\Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\enemygetfeedleaf.h">
+      <Filter>ヘッダー ファイル\Enemy_AI\Leaf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\enemyattackleaf.h">
+      <Filter>ヘッダー ファイル\Enemy_AI\Leaf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\enemychaseleaf.h">
+      <Filter>ヘッダー ファイル\Enemy_AI\Leaf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\enemychecknear.h">
+      <Filter>ヘッダー ファイル\Enemy_AI\Leaf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\enemymanager.h">
+      <Filter>ヘッダー ファイル\Charactor\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\enemyreturnleaf.h">
+      <Filter>ヘッダー ファイル\Enemy_AI\Leaf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\meshcylinder.h">
+      <Filter>ヘッダー ファイル\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\meshdome.h">
+      <Filter>ヘッダー ファイル\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\meshfield.h">
+      <Filter>ヘッダー ファイル\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\meshimpact.h">
+      <Filter>ヘッダー ファイル\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\meshpiler.h">
+      <Filter>ヘッダー ファイル\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\rankingscore.h">
+      <Filter>ヘッダー ファイル\2DUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\resultscore.h">
+      <Filter>ヘッダー ファイル\2DUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\number.h">
+      <Filter>ヘッダー ファイル\2DUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\xfilemanager.h">
+      <Filter>ヘッダー ファイル\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\workeruimanager.h">
+      <Filter>ヘッダー ファイル\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\titlewallmanager.h">
+      <Filter>ヘッダー ファイル\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\resultscoremanager.h">
+      <Filter>ヘッダー ファイル\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\gamewallmanager.h">
+      <Filter>ヘッダー ファイル\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\gimmickmanager.h">
+      <Filter>ヘッダー ファイル\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\eventareamanager.h">
+      <Filter>ヘッダー ファイル\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\billboard.h">
+      <Filter>ヘッダー ファイル\BaseClass\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\animationobject2d.h">
+      <Filter>ヘッダー ファイル\BaseClass\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\movecharactor.h">
+      <Filter>ヘッダー ファイル\BaseClass\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\object.h">
+      <Filter>ヘッダー ファイル\BaseClass\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\nomovecharactor.h">
+      <Filter>ヘッダー ファイル\BaseClass\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\object2D.h">
+      <Filter>ヘッダー ファイル\BaseClass\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\object3D.h">
+      <Filter>ヘッダー ファイル\BaseClass\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\objectX.h">
+      <Filter>ヘッダー ファイル\BaseClass\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\move3dobject.h">
+      <Filter>ヘッダー ファイル\BaseClass\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\workerstatebase.h">
+      <Filter>ヘッダー ファイル\State\Worker</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\workerstateneutral.h">
+      <Filter>ヘッダー ファイル\State\Worker</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\statemachine.h">
+      <Filter>ヘッダー ファイル\State\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\state.h">
+      <Filter>ヘッダー ファイル\State\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\gamestate.h">
+      <Filter>ヘッダー ファイル\State\Child</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\model.h">
+      <Filter>ヘッダー ファイル\Charactor\Motion</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\motion.h">
+      <Filter>ヘッダー ファイル\Charactor\Motion</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\motiondata.h">
+      <Filter>ヘッダー ファイル\Charactor\Motion</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\motionmanager.h">
+      <Filter>ヘッダー ファイル\Charactor\Motion</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\motioninstancing.h">
+      <Filter>ヘッダー ファイル\Charactor\Instancing\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\modelmanager.h">
+      <Filter>ヘッダー ファイル\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\feedmanager.h">
+      <Filter>ヘッダー ファイル\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\arraybehaviortree.h">
+      <Filter>ヘッダー ファイル\Array_AI\Base_tree</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\arrayattackleaf.h">
+      <Filter>ヘッダー ファイル\Array_AI\Leaf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\arraychecknear.h">
+      <Filter>ヘッダー ファイル\Array_AI\Leaf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\arraygetfeedleaf.h">
+      <Filter>ヘッダー ファイル\Array_AI\Leaf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\arraywaitleaf.h">
+      <Filter>ヘッダー ファイル\Array_AI\Leaf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\attackenemyleaf.h">
+      <Filter>ヘッダー ファイル\Array_AI\Leaf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\enemystateneutral.h">
+      <Filter>ヘッダー ファイル\State\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\enemystatebase.h">
+      <Filter>ヘッダー ファイル\State\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\enemystatemove.h">
+      <Filter>ヘッダー ファイル\State\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\basemapfeed.h">
+      <Filter>ヘッダー ファイル\XFile</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\array.h">
+      <Filter>ヘッダー ファイル\Charactor\Array</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\arraymanager.h">
+      <Filter>ヘッダー ファイル\Charactor\Array</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\separationant.h">
+      <Filter>ヘッダー ファイル\Charactor\Array</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\topant.h">
+      <Filter>ヘッダー ファイル\Charactor\Array</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\queen.h">
+      <Filter>ヘッダー ファイル\Charactor\Defence</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\enemy.h">
+      <Filter>ヘッダー ファイル\Charactor\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\parameter.h">
+      <Filter>ヘッダー ファイル\Charactor\Param</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\charactorparam.h">
+      <Filter>ヘッダー ファイル\Charactor\Param</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\arrayspawner.h">
+      <Filter>ヘッダー ファイル\Charactor\Spawn\Array_Spawn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\arrayspawnmanager.h">
+      <Filter>ヘッダー ファイル\Charactor\Spawn\Array_Spawn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\enemyspawner.h">
+      <Filter>ヘッダー ファイル\Charactor\Spawn\Enemy_Spawn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\enemyspawnmanager.h">
+      <Filter>ヘッダー ファイル\Charactor\Spawn\Enemy_Spawn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\titleant.h">
+      <Filter>ヘッダー ファイル\Charactor\TitleCharactor</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\titleantmanager.h">
+      <Filter>ヘッダー ファイル\Charactor\TitleCharactor</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\tutoarrayant.h">
+      <Filter>ヘッダー ファイル\Charactor\TutoCharactor</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\tutorialtopant.h">
+      <Filter>ヘッダー ファイル\Charactor\TutoCharactor</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\worker.h">
+      <Filter>ヘッダー ファイル\Charactor\Worker</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\workermanager.h">
+      <Filter>ヘッダー ファイル\Charactor\Worker</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\signalui.h">
+      <Filter>ヘッダー ファイル\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\shadow.h">
+      <Filter>ヘッダー ファイル\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\sendnumber.h">
+      <Filter>ヘッダー ファイル\2DUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\gauge.h">
+      <Filter>ヘッダー ファイル\2DUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\feedgetleaf.h">
+      <Filter>ヘッダー ファイル\Array_AI\Leaf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\feedsignal.h">
+      <Filter>ヘッダー ファイル\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\gametime.h">
+      <Filter>ヘッダー ファイル\2DUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\eventarea.h">
+      <Filter>ヘッダー ファイル\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\behaviortree.h">
+      <Filter>ヘッダー ファイル\AI_System\Base_Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\folllowtopleaf.h">
+      <Filter>ヘッダー ファイル\Array_AI\Leaf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\blackboard.h">
+      <Filter>ヘッダー ファイル\AI_System\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\blockmanager.h">
+      <Filter>ヘッダー ファイル\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\node.h">
+      <Filter>ヘッダー ファイル\AI_System\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\nodebase.h">
+      <Filter>ヘッダー ファイル\AI_System\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\selector.h">
+      <Filter>ヘッダー ファイル\AI_System\Selector</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\sepuence.h">
+      <Filter>ヘッダー ファイル\AI_System\Sequence</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\inverter.h">
+      <Filter>ヘッダー ファイル\AI_System\Inverter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\leafnodebase.h">
+      <Filter>ヘッダー ファイル\AI_System\LeafNode\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\branchnodebase.h">
+      <Filter>ヘッダー ファイル\AI_System\Branch\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\compositenodebase.h">
+      <Filter>ヘッダー ファイル\AI_System\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\pausemanager.h">
+      <Filter>ヘッダー ファイル\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\decorator.h">
+      <Filter>ヘッダー ファイル\AI_System\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\hastoporderleaf.h">
+      <Filter>ヘッダー ファイル\Array_AI\Leaf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\sepalationsign.h">
+      <Filter>ヘッダー ファイル\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\returnnestleaf.h">
+      <Filter>ヘッダー ファイル\Array_AI\Leaf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\movetofeedleaf.h">
+      <Filter>ヘッダー ファイル\Array_AI\Leaf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\targetselector.h">
+      <Filter>ヘッダー ファイル\AI_System\Selector</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\chasedestination.h">
+      <Filter>ヘッダー ファイル\AI_System\LeafNode\Samples</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\waitorderleaf.h">
+      <Filter>ヘッダー ファイル\AI_System\LeafNode\Samples</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\waitleaf.h">
+      <Filter>ヘッダー ファイル\AI_System\LeafNode\Samples</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\checkneardestination.h">
+      <Filter>ヘッダー ファイル\AI_System\LeafNode\Samples</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\circle3d.h">
+      <Filter>ヘッダー ファイル\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\extractantsignal.h">
+      <Filter>ヘッダー ファイル\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\loseresultobject.h">
+      <Filter>ヘッダー ファイル\Scenes\SceneObject</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\jsonmanager.h">
+      <Filter>ヘッダー ファイル\JsonUtility\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\jsoncreator.h">
+      <Filter>ヘッダー ファイル\JsonUtility\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\createjsonui.h">
+      <Filter>ヘッダー ファイル\JsonUtility\Sepalation</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\jsonconverter.h">
+      <Filter>ヘッダー ファイル\JsonUtility\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\createjsonmeshdome.h">
+      <Filter>ヘッダー ファイル\JsonUtility\Sepalation</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\createjsonmeshfield.h">
+      <Filter>ヘッダー ファイル\JsonUtility\Sepalation</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\loseresultmanager.h">
+      <Filter>ヘッダー ファイル\Scenes\SceneManager</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Out_Line.hlsl" />
+    <FxCompile Include="Instancing.hlsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DefenceQueen.rc">
+      <Filter>リソース ファイル</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
