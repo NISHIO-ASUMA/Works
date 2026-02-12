@@ -57,7 +57,7 @@ HRESULT CNumber::Init(D3DXVECTOR3 pos,float fwidth,float fheight)
 		NULL);
 
 	// 頂点情報のポインタ
-	VERTEX_2D* pVtx;	
+	VERTEX_2D* pVtx = nullptr;
 
 	// 頂点バッファをロックし,頂点情報へのポインタを取得
 	m_pVtxBuff->Lock(0, 0, (void**)&pVtx, 0);
@@ -82,9 +82,9 @@ HRESULT CNumber::Init(D3DXVECTOR3 pos,float fwidth,float fheight)
 
 	//テクスチャ座標の設定
 	pVtx[0].tex = D3DXVECTOR2(0.0f, 0.0f);
-	pVtx[1].tex = D3DXVECTOR2(DIGIT_VALUE, 0.0f);
+	pVtx[1].tex = D3DXVECTOR2(Config::DIGIT_VALUE, 0.0f);
 	pVtx[2].tex = D3DXVECTOR2(0.0f, 1.0f);
-	pVtx[3].tex = D3DXVECTOR2(DIGIT_VALUE, 1.0f);
+	pVtx[3].tex = D3DXVECTOR2(Config::DIGIT_VALUE, 1.0f);
 
 	//頂点バッファをアンロック
 	m_pVtxBuff->Unlock();
@@ -108,7 +108,7 @@ void CNumber::Uninit(void)
 //=========================================================
 void CNumber::Update(void)
 {
-	// 無し
+
 }
 //=========================================================
 // 描画処理
@@ -155,7 +155,7 @@ void CNumber::SetSize(float fWidth, float fHeight)
 	m_fHeight = fHeight;
 
 	// 頂点情報のポインタ
-	VERTEX_2D* pVtx;
+	VERTEX_2D* pVtx = nullptr;
 
 	// 頂点バッファをロック
 	m_pVtxBuff->Lock(0, 0, (void**)&pVtx, 0);
@@ -177,12 +177,12 @@ void CNumber::SetCol(const D3DXCOLOR& col)
 	m_col = col;
 
 	// 頂点情報のポインタ
-	VERTEX_2D* pVtx;
+	VERTEX_2D* pVtx = nullptr;
 
 	// 頂点バッファをロック
 	m_pVtxBuff->Lock(0, 0, (void**)&pVtx, 0);
 
-	// カラー
+	// カラーを設定
 	pVtx[0].col =
 	pVtx[1].col =
 	pVtx[2].col =
@@ -215,15 +215,15 @@ void CNumber::SetFlash(const int& nStartFrame, const int& nEndFrame, const D3DXC
 	// 透明度を格納する
 	float alpha = NULL;
 
-	if (fProgress < 0.5f)
+	if (fProgress < HALF)
 	{
 		// 線形補間
-		alpha = Lerp(0.5f, 1.0f, fProgress * 2.0f);
+		alpha = Lerp(HALF, Config::END_FLOAT, fProgress * Config::RATIO);
 	}
 	else
 	{
 		// 線形補間
-		alpha = Lerp(1.0f, 0.5f, (fProgress - 0.5f) * 2.0f);
+		alpha = Lerp(Config::END_FLOAT, HALF, (fProgress - HALF) * Config::RATIO);
 	}
 
 	// カラー設定
@@ -241,19 +241,19 @@ void CNumber::SetFlash(const int& nStartFrame, const int& nEndFrame, const D3DXC
 void CNumber::SetDigit(int nDigit)
 {
 	// 頂点情報のポインタ
-	VERTEX_2D* pVtx;
+	VERTEX_2D* pVtx = nullptr;
 
 	// 頂点バッファのロック
 	m_pVtxBuff->Lock(0, 0, (void**)&pVtx, 0);
 
 	// テクスチャ座標の計算
-	float TexU = nDigit * DIGIT_VALUE;
+	float TexU = nDigit * Config::DIGIT_VALUE;
 
 	// テクスチャ座標の設定
 	pVtx[0].tex = D3DXVECTOR2(TexU, 0.0f);
-	pVtx[1].tex = D3DXVECTOR2(TexU + DIGIT_VALUE, 0.0f);
+	pVtx[1].tex = D3DXVECTOR2(TexU + Config::DIGIT_VALUE, 0.0f);
 	pVtx[2].tex = D3DXVECTOR2(TexU, 1.0f);
-	pVtx[3].tex = D3DXVECTOR2(TexU + DIGIT_VALUE, 1.0f);
+	pVtx[3].tex = D3DXVECTOR2(TexU + Config::DIGIT_VALUE, 1.0f);
 
 	// 頂点バッファのアンロック
 	m_pVtxBuff->Unlock();

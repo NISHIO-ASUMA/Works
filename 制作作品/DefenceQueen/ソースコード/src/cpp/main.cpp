@@ -218,14 +218,13 @@ LRESULT CALLBACK WindowProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 
 	case WM_MOUSEWHEEL: // マウスのホイール判定
 	{
-#ifdef _DEBUG
+#ifdef NDEBUG
 		// ローカル変数
 		int zDelta = GET_WHEEL_DELTA_WPARAM(wParam);
 
 		// ホイール情報
 		CManager::GetInstance()->GetCamera()->WheelMouse(zDelta);
 #endif // _DEBUG
-
 	}
 	break;
 

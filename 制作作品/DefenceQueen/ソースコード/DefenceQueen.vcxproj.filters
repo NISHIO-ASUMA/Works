@@ -393,9 +393,6 @@
     <ClCompile Include="src\cpp\score.cpp">
       <Filter>ソース ファイル\2DUI</Filter>
     </ClCompile>
-    <ClCompile Include="src\cpp\sendnumber.cpp">
-      <Filter>ソース ファイル\2DUI</Filter>
-    </ClCompile>
     <ClCompile Include="src\cpp\gametime.cpp">
       <Filter>ソース ファイル\2DUI</Filter>
     </ClCompile>
@@ -1279,9 +1276,6 @@
     </ClInclude>
     <ClInclude Include="src\include\shadow.h">
       <Filter>ヘッダー ファイル\3D</Filter>
-    </ClInclude>
-    <ClInclude Include="src\include\sendnumber.h">
-      <Filter>ヘッダー ファイル\2DUI</Filter>
     </ClInclude>
     <ClInclude Include="src\include\gauge.h">
       <Filter>ヘッダー ファイル\2DUI</Filter>

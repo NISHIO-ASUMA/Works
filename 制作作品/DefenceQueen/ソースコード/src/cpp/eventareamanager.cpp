@@ -19,11 +19,11 @@
 //*********************************************************
 namespace EventManager
 {
-	constexpr int NUMPATH = 3;				// パス配列
+	constexpr int NUMPATH = 3;				// モデルの種類
 	constexpr int NUM_ACTIVEPOS = 4;		// イベントが起きる場所の数
-	constexpr float COLLISIONRANGE = 80.0f; // 餌の衝突判定半径
+	constexpr float COLLISIONRANGE = 65.0f; // 餌の衝突判定半径
 
-	const char* MODEL_NAME[NUMPATH] // モデルパス配列	
+	const char* MODEL_NAME[NUMPATH]			// モデルパス配列	
 	{
 		"FEED/Lemon.x",
 		"FEED/Suger.x",

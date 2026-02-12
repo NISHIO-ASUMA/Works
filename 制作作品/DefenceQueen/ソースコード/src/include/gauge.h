@@ -56,4 +56,13 @@ public:
 	static CGauge* Create(const D3DXVECTOR3& pos, float fWidth, float fHeight);
 
 private:
+
+	//***********************************
+	// 定数構造体宣言
+	//***********************************
+	struct Config
+	{
+		static constexpr float MAXCLUMP = 1.0f; // クランプする最大値
+		static constexpr float MINCLUMP = 0.0f; // クランプする最小値
+	};
 };

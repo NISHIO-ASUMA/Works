@@ -20,7 +20,7 @@ CPause::CPause(int nPriority) : CObject2D(nPriority),
 m_nIdxTexture(-1),
 m_nPauseType(NULL)
 {
-	// 値のクリア
+	
 }
 //=========================================================
 // デストラクタ
@@ -118,20 +118,20 @@ void CPause::SetTexture(void)
 	// 種類によってテクスチャ割り当てを切り替える
 	switch (m_nPauseType)
 	{
-	case MENU_BACK: // ただの背景
-		m_nIdxTexture = pTexture->Register("data/TEXTURE/PauseBack.png"); 		// テクスチャ割り当て
+	case MENU_BACK: // 背景
+		m_nIdxTexture = pTexture->Register("data/TEXTURE/PauseBack.png"); 
 		break;
 
 	case MENU_RETRY: // リトライ選択時
-		m_nIdxTexture = pTexture->Register("data/TEXTURE/pause_retry.png"); 		// テクスチャ割り当て
+		m_nIdxTexture = pTexture->Register("data/TEXTURE/pause_retry.png"); 
 		break;
 
 	case MENU_CONTINUE: // コンテニュー選択時
-		m_nIdxTexture = pTexture->Register("data/TEXTURE/pause_continue.png"); 	// テクスチャ割り当て
+		m_nIdxTexture = pTexture->Register("data/TEXTURE/pause_continue.png");
 		break;
 
 	case MENU_QUIT: // クイット選択時
-		m_nIdxTexture = pTexture->Register("data/TEXTURE/pause_quit.png"); 		// テクスチャ割り当て
+		m_nIdxTexture = pTexture->Register("data/TEXTURE/pause_quit.png"); 
 		break;
 
 	default:

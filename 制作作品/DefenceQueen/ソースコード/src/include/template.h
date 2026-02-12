@@ -53,7 +53,7 @@ template <class T>T NormalAngle(T Angle)
 //*********************************************************
 // üŒ`•âŠÔŠÖ”
 //*********************************************************
-template <class T>T Lerp(const T& a, const T& b, float t)
+template <class T>T Lerp(const T& start, const T& end, float ratio)
 {
-	return a + (b - a) * t;
+	return start + (end - start) * ratio;
 }

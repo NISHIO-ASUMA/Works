@@ -53,15 +53,21 @@ public:
 
 private:
 
+	//************************************
+	// 定数構造体宣言
+	//************************************
+	struct Config
+	{
+		static constexpr int DIGIT_TIME = 2;	// 桁数
+		static constexpr int NUMTIME = 90;		// 最大タイマー
+		static constexpr int CARVETIME = 60;	// カウント上限
+		static constexpr int DIVIDE = 10;		// 桁分割の値
+		static constexpr float VALUE_WIDTH = 150.0f; // 横幅の増加分
+		static constexpr float VALUE_FLOAT = 2.0f; // ずらす基準値
+	};
+
 	void Second(void);		// 秒計算
 	void Minute(void);		// 分計算
-
-	static constexpr int DIGIT_TIME = 2;	// 桁数
-	static constexpr int NUMTIME = 90;		// 最大タイマー
-	static constexpr int CARVETIME = 60;	// カウント上限
-	static constexpr int DIVIDE = 10;		// 桁分割の値
-	static constexpr int REDTIMEZONE = 10;  // 赤く点滅させる時間
-	static constexpr float VALUE_WIDTH = 150.0f; // 横幅の増加分
 
 	int m_nAllTime;		// 全体の時間
 	int m_nSecond;		// 現在時間 ( 秒 )
@@ -71,7 +77,7 @@ private:
 	float m_fHeight;	// 横幅
 	float m_fWidth;		// 高さ
 
-	CNumber* m_pNumberMinute[DIGIT_TIME];	// ナンバークラスの分表示ポインタ
-	CNumber* m_pNumberSecond[DIGIT_TIME];	// ナンバークラスの秒表示ポインタ
+	CNumber* m_pNumberMinute[Config::DIGIT_TIME];	// ナンバークラスの分表示ポインタ
+	CNumber* m_pNumberSecond[Config::DIGIT_TIME];	// ナンバークラスの秒表示ポインタ
 	D3DXVECTOR3 m_pos;		// 座標
 };

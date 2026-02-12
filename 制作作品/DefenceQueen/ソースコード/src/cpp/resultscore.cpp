@@ -77,7 +77,7 @@ HRESULT CResultScore::Init(void)
 		m_pNumber[nCnt] = new CNumber;
 
 		// 初期化処理
-		m_pNumber[nCnt]->Init(D3DXVECTOR3(m_pos.x - (fTexPos * 2.0f * nCnt), m_pos.y, 0.0f), fTexPos, m_fHeight);
+		m_pNumber[nCnt]->Init(D3DXVECTOR3(m_pos.x - (fTexPos * Config::POSX_VALUE * nCnt), m_pos.y, 0.0f), fTexPos, m_fHeight);
 
 		// ナンバー変数のサイズ
 		m_pNumber[nCnt]->SetSize(fTexPos, m_fHeight);
@@ -144,37 +144,8 @@ void CResultScore::Save(void)
 	// nullだったら
 	if (!m_pLoad) return;
 
-	// 元データのファイル名
-	const char* filename = "data/SCORE/Ranking.bin";
-
-	//==============================
-	// 既存ランキング(5件)を読む
-	//==============================
-	std::array<int, Config::WRITE_SCORE> scores = { 0 };
-	{
-		std::ifstream file(filename, std::ios::binary);
-
-		if (file)
-		{
-			// 5件読み込み
-			file.read((char*)scores.data(),sizeof(int) * Config::WRITE_SCORE);
-		}
-	}
-
-	//==============================
-	// 今回のスコアを追加
-	//==============================
-	scores[Config::WRITE_SCORE - 1] = m_nLoadScore;
-
-	//==============================
-	// 降順ソート
-	//==============================
-	std::sort(scores.begin(), scores.end(), std::greater<int>());
-
-	//==============================
-	// 保存
-	//==============================
-	m_pLoad->SaveIntToFixedArray(filename, scores);
+	// バイナリ数値データを保存
+	m_pLoad->SaveInt(Config::SAVEFILE, m_nLoadScore);
 
 	//==============================
 	// 通信サーバー設定
@@ -197,11 +168,11 @@ void CResultScore::UpdateAnimScore(void)
 	if (m_nTimer < m_nDuration)
 	{
 		// イージング適用
-		float t = CEasing::SetEase(m_nTimer, m_nDuration);
-		float fRate = CEasing::EaseOutCubic(t);
+		float time = CEasing::SetEase(m_nTimer, m_nDuration);
+		float fRate = CEasing::EaseOutCubic(time);
 
 		// 現在スコアをイージングさせる
-		m_nCurrentScore = m_nStartScore + (int)((m_nLoadScore - m_nStartScore) * fRate);
+		m_nCurrentScore = m_nStartScore + static_cast<int>(((m_nLoadScore - m_nStartScore) * fRate));
 
 		// 加算
 		m_nTimer++;

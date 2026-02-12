@@ -22,6 +22,14 @@
   },
   {
     "ObjectTag": "Ui",
+    "Pos": [ 1080.0, 640.0, 0.0 ],
+    "FlashFrame": 0,
+    "Width": 180.0,
+    "Height": 60.0,
+    "Texture": "Skip.png"
+  },
+  {
+    "ObjectTag": "Ui",
     "Pos": [ 120.0, 360.0, 0.0 ],
     "FlashFrame": 0,
     "Width": 110.0,

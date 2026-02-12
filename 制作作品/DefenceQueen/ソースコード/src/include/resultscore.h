@@ -62,6 +62,8 @@ private:
 		static constexpr int NUM_DIGIT = 10;	// 計算桁数
 		static constexpr int WRITE_SCORE = 5;	// 書き出し数
 		static constexpr int MAX_ANIMTIME = 180; // 最大継続時間
+		static constexpr float POSX_VALUE = 2.0f;// X座標加算値
+		static constexpr const char* SAVEFILE = "data/SCORE/ResultScore.bin"; // 書き出すファイル名
 	};
 
 	std::array<CNumber*,Config::NUM_SCORE>m_pNumber;	// 桁数分のナンバーのポインタ配列

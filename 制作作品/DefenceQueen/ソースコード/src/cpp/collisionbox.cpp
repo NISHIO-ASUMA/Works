@@ -16,7 +16,7 @@
 //*********************************************************
 namespace BOXINFO
 {
-	constexpr float HALF = 0.5f;		// 半分の倍率値
+	constexpr float HALFVALUE = 0.5f;		// 半分の倍率値
 	constexpr float PUSHVALUE = 0.1f;   // 押し出し加算値
 };
 
@@ -60,8 +60,8 @@ bool CCollisionBox::Collision(CBoxCollider* thisCollider, CBoxCollider* OtherCol
 	//================================
 	// 自分と相手の半分のサイズを取得
 	//================================
-	D3DXVECTOR3 MyHalfSize = MySize * BOXINFO::HALF;
-	D3DXVECTOR3 OtherHalfSize = OtherSize * BOXINFO::HALF;
+	D3DXVECTOR3 MyHalfSize = MySize * BOXINFO::HALFVALUE;
+	D3DXVECTOR3 OtherHalfSize = OtherSize * BOXINFO::HALFVALUE;
 
 	//===============================
 	// 最大最小座標を計算する

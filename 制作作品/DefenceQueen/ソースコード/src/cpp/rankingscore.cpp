@@ -24,12 +24,12 @@ m_fWidth(NULL),
 m_pos(VECTOR3_NULL),
 m_pLoad(nullptr)
 {
-	for (int nCntData = 0; nCntData < RANKING_MAX; nCntData++)
+	for (int nCntData = 0; nCntData < Config::RANKING_MAX; nCntData++)
 	{
-		// スコアを格納
+		// スコア初期化
 		m_aRankData[nCntData] = NULL;
 
-		for (int nCnt = 0; nCnt < RANKSCOREDIGIT; nCnt++)
+		for (int nCnt = 0; nCnt < Config::RANKSCOREDIGIT; nCnt++)
 		{
 			// ナンバーポインタ
 			m_apNumber[nCntData][nCnt] = nullptr;
@@ -41,7 +41,7 @@ m_pLoad(nullptr)
 //=========================================================
 CRankingScore::~CRankingScore()
 {
-	// 無し
+	
 }
 //=========================================================
 // 生成処理
@@ -72,23 +72,23 @@ HRESULT CRankingScore::Init(void)
 	Load();
 
 	// 横幅計算
-	float fTexPos = m_fWidth / RANKSCOREDIGIT;
+	float fTexPos = m_fWidth / Config::RANKSCOREDIGIT;
 
-	for (int nRank = 0; nRank < RANKING_MAX; nRank++)
+	for (int nRank = 0; nRank < Config::RANKING_MAX; nRank++)
 	{
 		// 桁数分
-		for (int nDigit = 0; nDigit < RANKSCOREDIGIT; nDigit++)
+		for (int nDigit = 0; nDigit < Config::RANKSCOREDIGIT; nDigit++)
 		{
 			// インスタンス生成
 			m_apNumber[nRank][nDigit] = new CNumber;
 
 			// Y座標をずらす
-			float yOffset = m_pos.y + (m_fHeight + 65.0f) * nRank;
+			float yOffset = m_pos.y + (m_fHeight + Config::POS_Y_VALUE) * nRank;
 
 			// 初期化処理
 			m_apNumber[nRank][nDigit]->Init
 			(
-				D3DXVECTOR3(m_pos.x - (fTexPos * 2.0f * nDigit), yOffset, 0.0f),
+				D3DXVECTOR3(m_pos.x - (fTexPos * Config::POS_WIDTH_VALUE * nDigit), yOffset, 0.0f),
 				fTexPos,
 				m_fHeight
 			);
@@ -97,7 +97,7 @@ HRESULT CRankingScore::Init(void)
 			m_apNumber[nRank][nDigit]->SetSize(fTexPos, m_fHeight);
 
 			// カラー設定
-			m_apNumber[nRank][nDigit]->SetCol(D3DCOLOR_RGBA(0,193,232,255));
+			m_apNumber[nRank][nDigit]->SetCol(SCORECOLOR);
 
 			// テクスチャ設定
 			m_apNumber[nRank][nDigit]->SetTexture("time.png");
@@ -112,9 +112,9 @@ HRESULT CRankingScore::Init(void)
 void CRankingScore::Uninit(void)
 {
 	// 使っている桁数分の破棄
-	for (int nRankData = 0; nRankData < RANKING_MAX; nRankData++)
+	for (int nRankData = 0; nRankData < Config::RANKING_MAX; nRankData++)
 	{
-		for (int nCnt = 0; nCnt < RANKSCOREDIGIT; nCnt++)
+		for (int nCnt = 0; nCnt < Config::RANKSCOREDIGIT; nCnt++)
 		{
 			if (m_apNumber[nRankData][nCnt] != nullptr)
 			{
@@ -142,16 +142,16 @@ void CRankingScore::Uninit(void)
 void CRankingScore::Update(void)
 {
 	// スコアの桁数更新
-	for (int rank = 0; rank < RANKING_MAX; rank++)
+	for (int rank = 0; rank < Config::RANKING_MAX; rank++)
 	{
 		// 現在のスコアを格納
 		int nScore = m_aRankData[rank];
 
-		for (int digit = 0; digit < RANKSCOREDIGIT; digit++)
+		for (int digit = 0; digit < Config::RANKSCOREDIGIT; digit++)
 		{
 			// 1桁ずつ取り出す
-			int nNum = nScore % 10; 
-			nScore /= 10;
+			int nNum = nScore % Config::DIGITNUM;
+			nScore /= Config::DIGITNUM;
 
 			// 桁更新
 			m_apNumber[rank][digit]->SetDigit(nNum);
@@ -164,9 +164,9 @@ void CRankingScore::Update(void)
 void CRankingScore::Draw(void)
 {
 	// 使っている桁数分の描画
-	for (int nRankData = 0; nRankData < RANKING_MAX; nRankData++)
+	for (int nRankData = 0; nRankData < Config::RANKING_MAX; nRankData++)
 	{
-		for (int nCnt = 0; nCnt < RANKSCOREDIGIT; nCnt++)
+		for (int nCnt = 0; nCnt <Config::RANKSCOREDIGIT; nCnt++)
 		{
 			// ナンバー描画
 			m_apNumber[nRankData][nCnt]->Draw();
@@ -186,13 +186,13 @@ void CRankingScore::Load(void)
 	if (pNet->GetIsConnect())
 	{
 		// 受信用配列
-		int recvData[RANKING_MAX] = {};
+		int recvData[Config::RANKING_MAX] = {};
 
-		// ランキング受信
+		// ランキングデータを受信
 		if (pNet->RecvInt(recvData))
 		{
 			// メンバ変数へコピー
-			for (int nRecvScore = 0; nRecvScore < RANKING_MAX; nRecvScore++)
+			for (int nRecvScore = 0; nRecvScore < Config::RANKING_MAX; nRecvScore++)
 			{
 				m_aRankData[nRecvScore] = recvData[nRecvScore];
 			}

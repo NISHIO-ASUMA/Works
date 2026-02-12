@@ -292,7 +292,6 @@
     <ClCompile Include="src\cpp\returnnestleaf.cpp" />
     <ClCompile Include="src\cpp\scene.cpp" />
     <ClCompile Include="src\cpp\score.cpp" />
-    <ClCompile Include="src\cpp\sendnumber.cpp" />
     <ClCompile Include="src\cpp\sepalationsign.cpp" />
     <ClCompile Include="src\cpp\separationant.cpp" />
     <ClCompile Include="src\cpp\shadow.cpp" />
@@ -469,7 +468,6 @@
     <ClInclude Include="src\include\scene.h" />
     <ClInclude Include="src\include\score.h" />
     <ClInclude Include="src\include\selector.h" />
-    <ClInclude Include="src\include\sendnumber.h" />
     <ClInclude Include="src\include\sepalationsign.h" />
     <ClInclude Include="src\include\separationant.h" />
     <ClInclude Include="src\include\sepuence.h" />

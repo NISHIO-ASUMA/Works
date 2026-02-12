@@ -84,7 +84,7 @@ void CCamera::Update(void)
 	}
 
 
-#ifdef _DEBUG
+#ifdef NDEBUG
 	// ƒJƒƒ‰XV
 	MouseView(CManager::GetInstance()->GetMouse());
 

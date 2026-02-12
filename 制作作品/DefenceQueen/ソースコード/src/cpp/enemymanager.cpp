@@ -114,9 +114,12 @@ void CEnemyManager::Erase(CEnemy* pEnemy)
 	auto DeleteDestObj = std::find(m_pEnemys.begin(), m_pEnemys.end(), pEnemy);
 
 	// ‚à‚µ—v‘f‚ÌÅŒã”ö‚È‚ç
-	if (DeleteDestObj == m_pEnemys.end()) return;
+	if (DeleteDestObj == m_pEnemys.end())
+	{
+		return;
+	}
 
-	// íœ
+	// —v‘f‚ğíœ
 	(*DeleteDestObj)->Uninit();
 
 	// æ‚ğnull‚É‚·‚é

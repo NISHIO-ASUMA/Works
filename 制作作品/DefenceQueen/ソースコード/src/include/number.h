@@ -39,7 +39,15 @@ public:
 
 private:
 
-	static constexpr float DIGIT_VALUE = 0.1f; // テクスチャ分割数割合
+	//********************************
+	// 定数構造体宣言
+	//********************************
+	struct Config
+	{
+		static constexpr float DIGIT_VALUE = 0.1f;	// テクスチャ分割数割合
+		static constexpr float END_FLOAT = 1.0f;	// 補完割合値
+		static constexpr float RATIO = 2.0f;		// 補完率
+	};
 
 	LPDIRECT3DVERTEXBUFFER9 m_pVtxBuff;	// 頂点バッファのポインタ
 	D3DXVECTOR3 m_pos;				// 座標情報

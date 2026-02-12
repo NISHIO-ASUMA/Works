@@ -12,7 +12,7 @@
 #include "template.h"
 
 //=========================================================
-// オーバーロードコンストラクタ
+// コンストラクタ
 //=========================================================
 CGauge::CGauge(int nPriority) : CObject2D(nPriority)
 {
@@ -23,7 +23,7 @@ CGauge::CGauge(int nPriority) : CObject2D(nPriority)
 //=========================================================
 CGauge::~CGauge()
 {
-	// 無し
+	
 }
 //=========================================================
 // 生成処理
@@ -89,7 +89,9 @@ void CGauge::SetLengthParamInt(const int nMax, const int nCurrent, const float f
 
 	// 与えられた引数の値の割合を計算
 	float fRate = static_cast<float>(nCurrent) / static_cast<float>(nMax);
-	fRate = Clump(fRate, 0.0f, 1.0f); 	// クランプする
+
+	// クランプする
+	fRate = Clump(fRate, Config::MINCLUMP, Config::MAXCLUMP); 
 
 	// ゲージの長さにセットする
 	SetSize(fMaxWidth * fRate, GetHeight());
@@ -104,7 +106,9 @@ void CGauge::SetLengthParamFloat(const float fMax, const float fCurrent, const f
 
 	// 与えられた引数の値の割合を計算
 	float fRate = fCurrent / fMax;
-	fRate = Clump(fRate, 0.0f, 1.0f); 	// クランプする
+
+	// クランプする
+	fRate = Clump(fRate, Config::MINCLUMP, Config::MAXCLUMP);
 
 	// ゲージの長さにセットする
 	SetSize(fMaxWidth * fRate, GetHeight());

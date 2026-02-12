@@ -57,6 +57,8 @@
 #define CENTERPOS (D3DXVECTOR3(640.0f, 360.0f, 0.0f))		// 画面の中心座標
 #define HALFWIDTH (SCREEN_WIDTH * 0.5f)						// スクリーンの横幅の半分
 #define HALFHEIGHT (SCREEN_HEIGHT * 0.5f)					// スクリーンの高さの半分
+#define HALF (0.5f)											// 半分の値
+
 
 #define COLOR_BLACK (D3DXCOLOR(0.0f, 0.0f, 0.0f, 1.0f))		// 黒
 #define COLOR_WHITE (D3DXCOLOR(1.0f, 1.0f, 1.0f, 1.0f))		// 白
@@ -68,6 +70,7 @@
 #define COLOR_GLAY	 (D3DXCOLOR(1.0f, 1.0f, 1.0f, 0.7f))	// グレー
 #define LASER		 (D3DXCOLOR(0.05f, 0.05f, 1.0f, 1.0f))	// レーザーカラー
 #define COLOR_NULL	 (D3DXCOLOR(0.0f, 0.0f, 0.0f, 0.0f))	// 完全透明
+#define SCORECOLOR	 (D3DXCOLOR(0.0f, 0.75f, 0.9f, 1.0f))	// ランキングスコアの色
 
 #define V_COLOR_WHITE (D3DCOLORVALUE(1.0f, 1.0f, 1.0f, 1.0f))	// モデルのカラー白
 #define V_COLOR_RED (D3DCOLORVALUE(1.0f, 0.0f, 0.0f, 1.0f))		// モデルのカラー赤
